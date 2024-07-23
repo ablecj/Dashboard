@@ -20,28 +20,33 @@ body{
     margin-top: 2em;
 } */
 
-/* .YTD_Dashboard{
-
-} */
+.YTD_Dashboard{
+    font-size: 14px;
+}
+/* label for month */
+.YTD_Month{
+    font-size: 14px;
+}
 
 .Month{
     color: #696969;
     width: 20%;
     border-left: 1px solid grey;
+    font-size: 14px;
 }
 
 /* kpi label */
 .KPI_Label{
-    width: 90%;
+    width: 96%;
 }
 /* sales container  */
 .sale_container{
-    width: 94%;
+    width: 100%;
     background-color: white;
 }
 /* sales target container */
 .sales_target_container{
-    width: 94%;
+    width: 100%;
 
 }
 /* chart1 */
@@ -52,13 +57,61 @@ body{
 .sales_vs_target{
     height: 265px;
 }
+/* target_achiv_cont */
+.target_achiv_cont{
+    width: 100%;
+}
 
+/* tar_achiv */
+.tar_achiv{
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tar_achiv_p{
+    width: 100%;
+    background-color: #fff;
+}
+/* sale_last_Year */
+.sale_last_Year{
+    width: 100%;
+}
+/* sale_by_region */
+.sale_by_region{
+    height: 262px;
+}
+/* sales_channel */
+.sales_channel{
+    height: 262px;
+}
+/* inventory chart */
+.Inventory_chart{
+    height: 262px;
+}
 
+/* Gross_profit */
+.Gross_profit{
+    width: 100%;
+}
+/* G_P_Margin */
+.G_P_Margin{
+    width: 100%;
+}
 
+/* sales_growth */
+.sales_growth{
+    height: 200px;
+    /* overflow: hidden; */
+}
 
-
-
-
+/* R_D_Outstanding */
+.R_D_Outstanding{
+    height: 200px;
+}
 
 
 

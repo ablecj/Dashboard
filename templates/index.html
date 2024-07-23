@@ -31,69 +31,163 @@
     />
   </head>
   <body>
-    <div class="container-fluid ">
-        <!-- first section labels -->
-        <div class="row align-items-center">
-            <div class="col-lg-3 col-md-3 col-sm-12 mt-4"> 
-                <label for="YTD_Dashboard" class="YTD_Dashboard w-50 p-1 bg-white text-secondary ">4. YTD Dashboard</label> 
-            </div>
-            <div class='col-lg-3 col-md-3 col-sm-12 mt-4 d-flex justify-content-end'>
-                <label for="YTD_MONTH" class="YTD_Month w-50 p-1 bg-white text-secondary d-flex justify-content-center ">Select YTD Month </label>
-                <span class="Month bg-white text-secondary d-flex justify-content-center align-items-center ">JUN</span>
-            </div>
+    <div class="container-fluid pb-3">
+      <!-- first section labels -->
+      <div class="row align-items-center ">
+        <div class="col-lg-3 col-md-3 col-sm-3 mt-4"> 
+            <label for="YTD_Dashboard" class="YTD_Dashboard w-50 p-1 bg-white text-secondary ">4. YTD Dashboard</label> 
         </div>
-        <!-- first chart and card section -->
-        <div class="row mt-4">
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="row ">
-                    <div class="col-12 d-flex justify-content-center p-1">
-                        <label class="p-1 d-flex justify-content-center bg-white KPI_Label">KPI's</label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-12 col-sm-6 mt-3 d-flex justify-content-center ">
-                        <div class="row sale_container">
-                            <h4 class="d-flex justify-content-center mb-0 mt-2">16,461</h4>
-                            <p class="d-flex justify-content-end ml-5 mb-0">YoY</p>
-                            <span class="d-flex justify-content-end text-success">43%</span>
-                            <p class="d-flex justify-content-center">Sales</p>  
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-sm-6 d-flex justify-content-center sale_tar_container">
-                        <div class="row sales_target_container bg-white mt-3">
-                            <h4 class="d-flex justify-content-center mt-3">15,907</h4>
-                            <p class="d-flex justify-content-center mt-3 mb-0">Sales Target</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- first chart -->
-            <div class="col-lg-3 col-md-3 mr-3">
-                <!-- <div class="row bg-white d-flex "> -->
-                    <p class="d-flex justify-content-center mb-0  bg-white"> Sales (Amount) by Product/Category</p>
-                    
-                    <div class="product_category_chart  bg-white" id="product_cat_chart"></div>
-                  <!-- </div> -->
-            </div>
-            <div class="col-lg-6 col-md-6 ">
-                <!-- <div class="row d-flex bg-white"> -->
-                  <p class="d-flex justify-content-center mb-0  bg-white">Actual Sales vs Target</p>
-
-                  <div class="sales_vs_target  bg-white" id="sales_vs_target"></div>
-                <!-- </div> -->
-            </div>
+        <div class='col-lg-3 col-md-3 col-sm-3 mt-4 d-flex justify-content-end'>
+            <label for="YTD_MONTH" class="YTD_Month w-50 p-1 bg-white text-secondary d-flex justify-content-center ">Select YTD Month </label>
+            <span class="Month bg-white text-secondary d-flex justify-content-center align-items-center ">JUN</span>
         </div>
-
     </div>
+      <!-- first chart and card section -->
+      <div class="row mt-4 ">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center p-1">
+              <label
+                class="p-1 d-flex justify-content-center bg-white KPI_Label"
+                >KPI's</label
+              >
+            </div>
+          </div>
 
+          <div class="row">
+            <div
+              class="col-12 col-md-12 col-sm-6 mt-3 d-flex justify-content-center"
+            >
+              <div class="row sale_container">
+                <h4 class="d-flex justify-content-center mb-0 mt-2">16,461</h4>
+                <p class="d-flex justify-content-end ml-5 mb-0">YoY</p>
+                <span class="d-flex justify-content-end text-success">43%</span>
+                <p class="d-flex justify-content-center">Sales</p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-12 col-sm-6 d-flex justify-content-center sale_tar_container"
+            >
+              <div class="row sales_target_container bg-white mt-3">
+                <h4 class="d-flex justify-content-center mt-3">15,907</h4>
+                <p class="d-flex justify-content-center mt-3 pb-1 mb-0">
+                  Sales Target
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- first chart -->
+        <div class="col-lg-3 col-md-3 col-sm-12 mr-3">
+          <p class="d-flex justify-content-center mb-0 bg-white">
+            Sales (Amount) by Product/Category
+          </p>
 
+          <div
+            class="product_category_chart bg-white"
+            id="product_cat_chart"
+          ></div>
+        </div>
+        <!-- 2 nd chart -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p class="d-flex justify-content-center mb-0 bg-white">
+            Actual Sales vs Target
+          </p>
 
-
-
-
-
-
+          <div class="sales_vs_target bg-white" id="sales_vs_target"></div>
+        </div>
+      </div>
+      <!-- 2nd section -->
+      <div class="row mt-3">
+        <div
+          class="col-lg-3 col-md-3 col-sm-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="row d-flex d-flex target_achiv_cont">
+            <div class="tar_achiv" id="tar_achiv"></div>
+            <p class="tar_achiv_p d-flex justify-content-center mb-0 pb-2">
+              Target Achivement
+            </p>
+          </div>
+          <div class="row d-flex bg-white mt-3 sale_last_Year">
+            <h4 class="d-flex justify-content-center mt-3">11,545</h4>
+            <h5 class="d-flex justify-content-center mt-4">Sales Last Year</h5>
+          </div>
+        </div>
+        <!-- sales(amount) by region -->
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <p class="mb-0 bg-white d-flex justify-content-center">
+            Sales (Amount) by Region
+          </p>
+          <div class="sale_by_region bg-white" id="sale_by_region"></div>
+        </div>
+        <!-- sales by channel -->
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <p class="d-flex justify-content-center bg-white mb-0">
+            sales by channel
+          </p>
+          <div
+            class="sales_channel bg-white d-flex justify-content-center align-items-center"
+            id="sales_channel"
+          ></div>
+        </div>
+        <!-- Iventory days outstanding -->
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <p class="d-flex justify-content-center bg-white mb-0">
+            Inventory Days Outstanding
+          </p>
+          <div
+            class="Inventory_chart bg-white d-flex justify-content-center align-items-center"
+            id="Inventory_chart"
+          ></div>
+        </div>
+      </div>
+      <!-- 3rd section -->
+      <div class="row mt-3">
+        <div
+          class="col-lg-3 col-md-3 col-sm-12 d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="row bg-white Gross_profit">
+            <h4 class="d-flex justify-content-center align-items-center mt-3">
+              5,868
+            </h4>
+            <p
+              class="mt-4 d-flex justify-content-center align-items-center mb-1"
+            >
+              Gross Profit
+            </p>
+          </div>
+          <div class="row mt-3 bg-white G_P_Margin">
+            <h1
+              class="d-flex justify-content-center align-items-center mt-2 p-1"
+            >
+              36%
+            </h1>
+            <p
+              class="p-1 mb-0 d-flex justify-content-center align-items-center"
+            >
+              Gross Profit Margin
+            </p>
+          </div>
+        </div>
+        <!-- sales Growth chart -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p class="d-flex justify-content-center bg-white mb-0">
+            Sales Growth
+          </p>
+          <div class="sales_growth bg-white" id="sales_growth"></div>
+        </div>
+        <!-- recievial Days Outstanding -->
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <p class="d-flex justify-content-center bg-white mb-0">
+            Receivale Days Outstanding
+          </p>
+          <div
+            class="R_D_Outstanding d-flex justify-content-center bg-white"
+            id="R_D_Outstanding"
+          ></div>
+        </div>
+      </div>
+    </div>
 
     <script src="../static/js/jquery-3.6.0.min.js"></script>
     <script src="../static/js/echarts.min.js"></script>
