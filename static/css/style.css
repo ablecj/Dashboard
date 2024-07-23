@@ -1,0 +1,74 @@
+body{
+    background-color: #172E68 !important;
+}
+.container-fluid {
+    width:100% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    height:auto;
+    margin-top: 2em;
+    /* padding-left: 0;
+    padding-right: 0; */
+    background-color: #dbdbdb !important;
+}
+.row{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .label_container{
+    margin-top: 2em;
+} */
+
+/* .YTD_Dashboard{
+
+} */
+
+.Month{
+    color: #696969;
+    width: 20%;
+    border-left: 1px solid grey;
+}
+
+/* kpi label */
+.KPI_Label{
+    width: 90%;
+}
+/* sales container  */
+.sale_container{
+    width: 94%;
+    background-color: white;
+}
+/* sales target container */
+.sales_target_container{
+    width: 94%;
+
+}
+/* chart1 */
+.product_category_chart{
+    height: 265px;
+}
+/* chart2 */
+.sales_vs_target{
+    height: 265px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
