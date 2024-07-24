@@ -26,6 +26,7 @@ body{
 /* label for month */
 .YTD_Month{
     font-size: 14px;
+    font-weight: 700;
 }
 
 .Month{
@@ -38,28 +39,50 @@ body{
 /* kpi label */
 .KPI_Label{
     width: 96%;
+    
 }
+.KPI_Label:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
 /* sales container  */
 .sale_container{
     width: 100%;
     background-color: white;
+    
 }
+.sale_container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
 /* sales target container */
 .sales_target_container{
     width: 100%;
 
 }
-/* chart1 */
-.product_category_chart{
-    height: 265px;
+.sales_target_container:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
+
+/* chart1 */
+.chart-container1:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+.product_category_chart{
+    height: 282px;
+}
+
 /* chart2 */
 .sales_vs_target{
-    height: 265px;
+    height: 282px;
 }
 /* target_achiv_cont */
 .target_achiv_cont{
     width: 100%;
+}
+.target_achiv_cont:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 /* tar_achiv */
@@ -80,7 +103,15 @@ body{
 .sale_last_Year{
     width: 100%;
 }
+.sale_last_Year:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
 /* sale_by_region */
+.chart_container2:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
 .sale_by_region{
     height: 262px;
 }
@@ -97,12 +128,22 @@ body{
 .Gross_profit{
     width: 100%;
 }
+.Gross_profit:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
 /* G_P_Margin */
 .G_P_Margin{
     width: 100%;
 }
+.G_P_Margin:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
 
 /* sales_growth */
+.chart_container3:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
 .sales_growth{
     height: 200px;
     /* overflow: hidden; */
